@@ -273,10 +273,6 @@ h2 {
     font-size: 1.7rem;
 }
 
-.discount-info li {
-    font-size: 0.7rem;
-}
-
 .consultations li {
     padding-bottom: 2%;
 }
@@ -336,6 +332,7 @@ h2 {
 .discount-info {
     display: inline-block;
     width: 70%;
+    font-size: 0.7rem;
 }
 
 .discount-info ul {

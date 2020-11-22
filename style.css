@@ -192,6 +192,10 @@ hr {
     top: 10px;
 }
 
+
+
+
+
 .info-work li {
     margin: 20px 0;
     font-size: 1rem;
@@ -200,8 +204,27 @@ hr {
 }
 
 .inside-list li {
-    padding-left: 0;
     font-size: .7rem;
+    padding-left: 10% ;
+}
+
+.scale::before {
+    font-family: "Font Awesome 5 Free";
+    display: inline-block;
+    content: '\f080';
+    padding-right: 20px;    
+    font-size: 1.5rem;
+    color: var(--orange);
+}
+
+
+.med-book::before {
+    font-family: "Font Awesome 5 Free";
+    display: inline-block;
+    content: '\f7e6';
+    padding-right: 20px;    
+    font-size: 1.5rem;
+    color: var(--orange);
 }
 
 h2 {
@@ -235,6 +258,21 @@ h2 {
     font-size: 1.5rem;
     color: var(--orange);
 }
+
+.discount-twenty {
+    font-size: 0.7rem;
+    padding-left: 10%;
+}
+
+.discount-twenty span {
+    font-size: 1rem;
+    color: var(--orange)
+}
+
+.discount-twenty span span {
+    font-size: 1.7rem;
+}
+
 
 .consultations li {
     padding-bottom: 2%;

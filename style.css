@@ -234,6 +234,34 @@ h2 {
     margin-bottom: 50px;
 }
 
+
+.test {
+    background: var(--purple);
+    color: #ffffff;
+    text-align: center;
+    padding: 10% 0;
+}
+
+.test h3 {
+    font-size: 2rem;
+}
+
+.btn-test {
+    padding: 20px;
+    background-color: var(--orange);
+    width: 300px;
+    margin: 0 auto;
+    border-radius: 10px;
+    margin-top: 50px; 
+}
+
+.btn-test a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+
 .consultations {
     padding: 5% 0 8% 0;
 }
@@ -272,6 +300,7 @@ h2 {
 .discount-twenty span span {
     font-size: 1.7rem;
 }
+
 
 .consultations li {
     padding-bottom: 2%;

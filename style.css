@@ -524,3 +524,23 @@ form {
     justify-content: center;
     padding-bottom: 50px;
 }
+
+
+.order-btn  {
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.order-btn a{
+    text-align: center;
+    width: 15%;
+    padding: 10px;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: bold;
+    background: var(--purple);
+    border-radius: 10px;
+}
+

@@ -7,6 +7,17 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./fonts/fontawesome-free-5.15.1-web/css/all.min.css">
 
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-01MJ161R5E"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-01MJ161R5E');
+    </script>
+
+
 </head>
 <body>
     <header>
@@ -18,6 +29,8 @@
             <div class="menu">
                 <a href="#header">Головна</a>
                 <a href="#info-work">Принципи роботи</a>
+                <a href="#test">Скринінг</a>
+                <a href="#consultations">Консультації</a>
                 <a href="#footer">Запис</a>
             </div>
 
@@ -29,14 +42,14 @@
          <!--Photo + about-->
         <div id="header" class="about">
             <div class="photo">
-                <img src="./image/photo.png" alt="dr-photo" width="300">
+                <img src="./image/photo.jpg" alt="dr-photo" width="300">
             </div>
             <div class="info-me"> 
-                <h1> Тимофєєв Роман Миколайович - Лікар психіатр</h1>
+                <h1>Тимофєєв Роман Миколайович</h1>
 
                 <div class="info-me-list">
                     <ul>
-                        <li class="graduate"><div>Ассистент кафедри психіатрії, наркології та медичної психології</div></li>
+                        <li class="graduate"><div>Асистент кафедри психіатрії, наркології та медичної психології</div></li>
                         <li class="psi">Лікар психіатр з 2003 року</li>
                         <li class="stethoscope">Лікар вищої категорії</li>
                     </ul>
@@ -53,7 +66,7 @@
             <ul>
                 <li><i class="far fa-check-square"></i>Тільки доказова медицина
                     <ul class="inside-list">
-                        <li class="scale">обов`язкова кількісна оцінка в динаміці психопатологічних симптомів за допомогою психометричних шкал (MADRS, YMRS, BPRS, MMSE та інші)</li>
+                        <li class="scale">обов`язкова кількісна оцінка психопатологічних симптомів в динаміці за допомогою психометричних шкал (MADRS, YMRS, BPRS, MMSE та інші)</li>
                     </ul>
                 </li>
                 <li><i class="far fa-check-square"></i>Тільки обгрунтовані діагнози</li>
@@ -65,10 +78,22 @@
                 </li>
             </ul>
         </div>
+        <hr>
+    </div>
 
+
+        <div id="test" class="test">
+            <div class="main-container">
+                <h3>Пройди тест та перевір себе безкоштовно</h3>
+                <div class="btn-test"><a href="#">Пройти тест</a></div>
+            </div>
+
+        </div>
+
+        <div class="main-container">
         <hr>
 
-        <div class="consultations">
+        <div id="consultations" class="consultations">
             <h2>Консультації:</h2>
             <ul class="consultations-list">
                 <li class="consultation">Очні консультації з видачею заключення та рецепту
@@ -99,10 +124,10 @@
                 </li>
                 <li class="consultation"><span class="upper">support care:</span>
                     <div class="discount-container">
-                        <div class="discount"><span>50%</span> економія </div>
+                        <div class="discount"><span>50%</span> економія</div>
                         <div class="discount-info">
                             <ul>
-                                <li class="plus">Первинна очна чи заочна консультація з видачею рецепту та заключення або доставкою по м. Дніпро</li>
+                                <li class="plus">Первинна очна чи заочна консультація з видачею рецепту та заключення з можливою доставкою по м. Дніпро</li>
                                 <li class="plus">6 повторних контрольних консультацій протягом року</li>
                             </ul>
                         </div>

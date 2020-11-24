@@ -505,3 +505,22 @@ form {
 }
 
 
+/*Page Skriner*/
+
+.skriner {
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.order-title {
+    text-align: center;
+    font-size: 1rem;
+    color: var(--purple);
+}
+
+.order {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+}

@@ -1,13 +1,5 @@
 
-
- <!DOCTYPE html>
- <html lang="en">
- <head>
-    <meta charset="utf-8">
- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
- </head>
- <body> 
-    <header>
+<?php
         <div class="header"> 
             <div class="logo-container">
                 <img class="logo" src="./image/logo.png" alt="TR-logo">
@@ -22,4 +14,4 @@
             </div>
 
         </div>
-    </header> 
+?>

@@ -952,6 +952,9 @@ input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[typ
         padding-right: 0;
     }
 
+     .photo img { 
+        width: 250px;
+    }
 
 }
 
@@ -1034,6 +1037,10 @@ input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[typ
     .skriner {
         padding-left: 0;
         padding-right: 0;
+    }
+ 
+     .photo img { 
+        width: 250px;
     }
 
 }

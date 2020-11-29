@@ -797,7 +797,7 @@ input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[typ
     }
 
     #photo  { 
-        width: 250px;
+       height: 300px;
     }
 
     .consultation-wrapper {
@@ -957,7 +957,7 @@ input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[typ
     }
 
     #photo  { 
-        width: 250px;
+       height: 300px;
     }
 
 }
@@ -1044,8 +1044,8 @@ input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[typ
     }
 
     #photo  { 
-        width: 250px;
-    }
+       height: 300px;
+ }
 
 }
 

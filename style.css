@@ -80,6 +80,10 @@ body {
     width: 30%;
 }
 
+#photo {
+    width: 300px;
+}
+
 .info-me {  
     width: 70%;
     margin-left: 50px;
@@ -792,7 +796,7 @@ input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[typ
         padding: 0 20px 0 20px;
     }
 
-    .photo img { 
+    #photo  { 
         width: 250px;
     }
 
@@ -952,7 +956,7 @@ input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[typ
         padding-right: 0;
     }
 
-     .photo img { 
+    #photo  { 
         width: 250px;
     }
 
@@ -1038,8 +1042,8 @@ input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[typ
         padding-left: 0;
         padding-right: 0;
     }
- 
-     .photo img { 
+
+    #photo  { 
         width: 250px;
     }
 

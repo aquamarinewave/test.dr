@@ -26,6 +26,22 @@
                     <img class="logo" src="./image/logo.png" alt="TR-logo">
                 </div>
 
+                <div class="mob-menu">
+                    <input type="checkbox" id="hmt" class="hidden-menu-ticker">
+                    <label class="btn-menu" for="hmt">
+                        <span class="first"></span>
+                        <span class="second"></span>
+                        <span class="third"></span>
+                    </label>
+                    <ul class="hidden-menu">
+                        <li><a href="#top">Головна</a></li>  
+                        <li><a href="#info-work">Принципи роботи</a></li>
+                        <li><a href="#test">Скринінг</a></li> 
+                        <li><a href="#consultations">Консультації</a></li>  
+                        <li><a href="#footer">Запис</a></li>  
+                    </ul>
+                </div>
+
                 <div class="menu">
                     <a href="#top">Головна</a>
                     <a href="#info-work">Принципи роботи</a>
@@ -155,21 +171,36 @@
 
             <div class="c-f-two">
               
-                <h2>Запис</h2>
-
-                <form action="./mail.php" method="POST">
-                    <fieldset>
-
-                    <input type="text" placeholder="Ваше і'мя" name="name">
-                    <br>
-                    <input type="text" placeholder="Ваше e-mail" name="email">
-                    <br>
-                    <input type="text" placeholder="Ваше телефон" name="phone">
-                    <br>
-                    <textarea rows="10" cols="45" placeholder="Коментар" name="message"></textarea>
-                    <input type="submit" value="Записатись">
-                    </fieldset>
-
+                <h3>Запис</h3>
+               
+                <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php">
+        
+                    <div class="fcf-form-group">
+                        <label for="Name" class="fcf-label">Ваше і'мя</label>
+                        <div class="fcf-input-group">
+                            <input type="text" id="Name" name="Name" class="fcf-form-control" required>
+                        </div>
+                    </div>
+            
+                    <div class="fcf-form-group">
+                        <label for="Email" class="fcf-label">Ваш email</label>
+                        <div class="fcf-input-group">
+                            <input type="email" id="Email" name="Email" class="fcf-form-control" required>
+                        </div>
+                    </div>
+            
+                    <div class="fcf-form-group">
+                        <label for="Phone" class="fcf-label">Ваш телефон</label>
+                        <div class="fcf-input-group">
+                            <input type="phone" id="Phone" name="Phone" class="fcf-form-control" required>
+                        </div>
+                    </div>
+            
+                    <div class="fcf-form-group">
+                        <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Відправити</button>
+                    </div>
+    
+            
                 </form>
               
             </div>       
@@ -177,7 +208,7 @@
         <div class="copyright"> 
             TR-Лікар психіатр - 2020
         </div>  
-
+        <div class="chevronup-container"><a class="chevronup" href="#top"><i class="fas fa-chevron-up"></i></a></div>
     </footer>
     
     <script src="https://kit.fontawesome.com/11bcb7faa9.js" crossorigin="anonymous"></script>

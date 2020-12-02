@@ -431,9 +431,6 @@ footer {
     color: var(--purple);
 }
 
-.soc-icon {
-}
-
 .soc-img {
     width: 30px;
 }
@@ -455,7 +452,6 @@ footer {
 
 .chevronup a {
     text-decoration: none;
-
 }
 
 .fa-chevron-up {
@@ -575,7 +571,7 @@ label.fcf-label {
 }
 
 @media (prefers-reduced-motion: reduce) {
-    .fcf-btn {
+.fcf-btn {
         transition: none;
     }
 }
@@ -630,7 +626,6 @@ input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[typ
 
 .skriner {
     padding-top: 100px;
-    height: 5550px;
     display: flex;
     justify-content: center;
 }
@@ -858,7 +853,6 @@ input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[typ
         padding-left: 0;
         padding-right: 0;
     }
-
 
 }
 

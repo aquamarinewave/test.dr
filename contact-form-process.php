@@ -2,15 +2,15 @@
 if (isset($_POST['Email'])) {
 
     // EDIT THE 2 LINES BELOW AS REQUIRED
-    $email_to = "maryna.medynska@gmail.com";
+    $email_to = "psychiatrist.dnipro@gmail.com";
     $email_subject = "Новий запит на прийом";
 
     function problem($error)
     {
-        echo "We are very sorry, but there were error(s) found with the form you submitted. ";
-        echo "These errors appear below.<br><br>";
+        echo "Вибачте виникла помилка. ";
+        echo "Нижче вказано в де помилка below.<br><br>";
         echo $error . "<br><br>";
-        echo "Please go back and fix these errors.<br><br>";
+        echo "Поверніться назад і виправте її.<br><br>";
         die();
     }
 
@@ -20,7 +20,7 @@ if (isset($_POST['Email'])) {
         !isset($_POST['Email']) ||
         !isset($_POST['Phone'])
     ) {
-        problem('We are sorry, but there appears to be a problem with the form you submitted.');
+        problem('Вибачте виникла помилка.');
     }
 
     $name = $_POST['Name']; // required
@@ -34,7 +34,7 @@ if (isset($_POST['Email'])) {
         $error_message .= 'Вкажіть вірно Ваш Email.<br>';
     }
 
-    $string_exp = "/^[A-Za-z .'-]+$/";
+    $string_exp = "/^[а-яёa-z]+$/iu";
 
     if (!preg_match($string_exp, $name)) {
         $error_message .= "Вкажіть Ваше І'мя.<br>";
@@ -74,6 +74,7 @@ if (isset($_POST['Email'])) {
     <title>TR-лікар психіатр</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./fonts/fontawesome-free-5.15.1-web/css/all.min.css">
+    <link rel="shortcut icon" href="/image/logo.png" type="image/png">
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-01MJ161R5E"></script>
@@ -91,7 +92,7 @@ if (isset($_POST['Email'])) {
         <div class="header-wrapp">
             <div class="header"> 
                 <div class="logo-container">
-                    <img class="logo" src="./image/logo.png" alt="TR-logo">
+                    <a href="https://www.psychiatrist-dnipro.com.ua"><img class="logo" src="./image/logo.png" alt="TR-logo"></a>
                 </div>
 
                 <div class="mob-menu">

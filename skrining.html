@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Скринінг</title>
+    <link rel="shortcut icon" href="/image/logo.png" type="image/png">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -11,7 +12,7 @@
         <div class="header-wrapp">
             <div class="header"> 
                 <div class="logo-container">
-                    <img class="logo" src="./image/logo.png" alt="TR-logo">
+                    <a href="https://www.psychiatrist-dnipro.com.ua"><img class="logo" src="./image/logo.png" alt="TR-logo"></a>
                 </div>
 
                 <div class="mob-menu">
@@ -61,11 +62,16 @@
                 <div id="footer" class="contact-h">Контакти:</div>
                 <div class="phone"><a href="tel:+380505006621">+38 (050) 500-66-21</a></div>
                 <div class="mail"><a href="mailto:psychiatrist.dnipro@gmail.com">psychiatrist.dnipro@gmail.com</a></div>
-                <span class="soc-icon"><a href=""><img class="soc-img" src="./image/soc icons/facebook_icon.svg" alt="facebook-icon"></a></span>
-                <span class="soc-icon"><a href=""><img class="soc-img" src="./image/soc icons/Instagram_logo_2016.svg" alt="instagram-icon"></a></span>
-                <span class="soc-icon"><a href="tg://resolve?domain=login"><img class="soc-img" src="./image/soc icons/telegram_logo.svg" alt="telegram-icon"></a></span>
+             <!--   <span class="soc-icon"><a href="https://www.facebook.com/profile.php?id=100058825736530" target="_blank" ><img class="soc-img" src="./image/soc icons/facebook_icon.svg" alt="facebook-icon"></a></span> -->
+                <span class="soc-icon"><a href="https://instagram.com/psychiatrist_dnipro?igshid=1qcctmzyaouax" target="_blank"><img class="soc-img" src="./image/soc icons/Instagram_logo_2016.svg" alt="instagram-icon"></a></span>
+                <span class="soc-icon"><a href="tg://resolve?domain=psychiatrist_dnipro"><img class="soc-img" src="./image/soc icons/telegram_logo.svg" alt="telegram-icon"></a></span>
                 <span class="soc-icon"><a href="viber://chat?number=+380505006621"><img class="soc-img" src="./image/soc icons/viber-icon.svg" alt="viber-icon"></a></span>
-                <span class="soc-icon"><a href="https://api.whatsapp.com/send?phone=380"><img class="soc-img" src="./image/soc icons/whatsapp_logo.svg" alt="whatsapp-icon"></a></span>
+             <!--   <span class="soc-icon"><a href="https://api.whatsapp.com/send?phone=380"><img class="soc-img" src="./image/soc icons/whatsapp_logo.svg" alt="whatsapp-icon"></a></span> -->
+                <div class="working-time">
+                     <div class="contact-h">Графік роботи: </div>
+                     <div>Без вихідних</div>
+                 </div>
+        
         
             </div>
 
@@ -76,7 +82,7 @@
                 <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php">
         
                     <div class="fcf-form-group">
-                        <label for="Name" class="fcf-label">Ваше і'мя</label>
+                        <label for="Name" class="fcf-label">Ваше Ім'я</label>
                         <div class="fcf-input-group">
                             <input type="text" id="Name" name="Name" class="fcf-form-control" required>
                         </div>
@@ -92,7 +98,7 @@
                     <div class="fcf-form-group">
                         <label for="Phone" class="fcf-label">Ваш телефон</label>
                         <div class="fcf-input-group">
-                            <input type="phone" id="Phone" name="Phone" class="fcf-form-control" required>
+                            <input type="tel" id="Phone" name="Phone" class="fcf-form-control" placeholder="0991234567" required>
                         </div>
                     </div>
             

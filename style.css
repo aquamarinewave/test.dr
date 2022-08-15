@@ -205,7 +205,7 @@ hr {
 
 .inside-list li {
     font-size: .7rem;
-    padding-left: 10% ;
+    padding-left: 10%;
 }
 
 .scale::before {
@@ -300,12 +300,13 @@ h2 {
 
 .discount-twenty span {
     font-size: 1rem;
-    color: var(--orange)
+    color: var(--orange);
 }
 
 .discount-twenty span span {
     font-size: 1.7rem;
 }
+
 
 
 .consultations li {
@@ -355,6 +356,10 @@ h2 {
     color: var(--orange);
 }
 
+.plus {
+    padding-left: 30px;
+}
+
 .plus::before {
     font-family: "Font Awesome 5 Free";
     display: inline-block;
@@ -400,6 +405,10 @@ footer {
 .c-f-two {
     display: inline-block;
     width: 60%;
+}
+
+.working-time .contact-h {
+    margin: 30px 0 20px 0;
 }
 
 .phone {
@@ -486,6 +495,11 @@ footer {
 
 .fcf-form-group {
     margin-bottom: 1rem;
+}
+
+#Phone::placeholder {
+    color: rgba(108, 122, 137, 0.5);
+    
 }
 
 .fcf-input-group {
@@ -1042,4 +1056,3 @@ input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[typ
  }
 
 }
-

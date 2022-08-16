@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,12 +8,13 @@
 		<link rel="stylesheet" href="./css/styles.css" />
 	</head>
 	<body>
+		<!--Header-->
 		<header>
 			<div class="header-wrapp">
 				<div class="header">
 					<div class="logo-container">
-						<a href="https://www.psychiatrist-dnipro.com.ua">
-							<img class="logo" src="./image/logo.png" alt="TR-logo" />
+						<a href="https://www.psychiatrist-dnipro.com.ua" rel="noopener noreferrer">
+							<img class="logo" src="./image/logo.png" alt="Логотип, зображення мозку в колі на ньому літери TR" />
 						</a>
 					</div>
 
@@ -25,16 +26,16 @@
 							<span class="third"></span>
 						</label>
 						<ul class="hidden-menu">
-							<li><a href="./index.html">Головна</a></li>
-							<li><a href="#skriner">Скринінг</a></li>
+							<li><a href="#top">Головна</a></li>
+							<li><a href="#test">Скринінг</a></li>
 							<li><a href="#footer">Запис</a></li>
 						</ul>
 					</div>
 
 					<div class="menu">
-						<a href="./index.html">Головна</a>
-						<a href="#skriner">Скринінг</a>
-						<a href="#footer">Запис</a>
+						<a class="menu-item" href="#top">Головна</a>
+						<a class="menu-item" href="#test">Скринінг</a>
+						<a class="menu-item" href="#footer">Запис</a>
 					</div>
 				</div>
 			</div>
@@ -53,34 +54,40 @@
 			</iframe>
 		</div>
 
-		<!--Contact information social accounts-->
+		<!--Footer Contact information social accounts-->
 		<footer id="footer">
 			<div class="container-footer">
 				<div class="c-f-one">
-					<div id="footer" class="contact-h">Контакти:</div>
-					<div class="phone">
-						<a href="tel:+380505006621">+38 (050) 500-66-21</a>
-					</div>
-					<div class="mail">
-						<a href="mailto:psychiatrist.dnipro@gmail.com">psychiatrist.dnipro@gmail.com</a>
-					</div>
-					<!--    <span class="soc-icon"><a href="https://www.facebook.com/profile.php?id=100058825736530" target="_blank" ><img class="soc-img" src="./image/soc icons/facebook_icon.svg" alt="facebook-icon"></a></span> -->
-					<span class="soc-icon">
-						<a href="https://instagram.com/psychiatrist_dnipro?igshid=1qcctmzyaouax" target="_blank">
-							<img class="soc-img" src="./image/soc icons/Instagram_logo_2016.svg" alt="instagram-icon" />
-						</a>
-					</span>
-					<span class="soc-icon">
-						<a href="tg://resolve?domain=psychiatrist_dnipro">
-							<img class="soc-img" src="./image/soc icons/telegram_logo.svg" alt="telegram-icon" />
-						</a>
-					</span>
-					<span class="soc-icon">
-						<a href="viber://chat?number=+380505006621">
-							<img class="soc-img" src="./image/soc icons/viber-icon.svg" alt="viber-icon" />
-						</a>
-					</span>
-					<!--   <span class="soc-icon"><a href="https://api.whatsapp.com/send?phone=380"><img class="soc-img" src="./image/soc icons/whatsapp_logo.svg" alt="whatsapp-icon"></a></span> -->
+					<h2 class="contact-h">Контакти:</h2>
+					<ul class="contact-list">
+						<li class="phone">
+							<a class="phone-link" href="tel:+380505006621">+38 (050) 500-66-21</a>
+						</li>
+						<li class="mail">
+							<a href="mailto:psychiatrist.dnipro@gmail.com">psychiatrist.dnipro@gmail.com</a>
+						</li>
+					</ul>
+
+					<ul class="social-list">
+						<!--    <li class="soc-icon"><a href="https://www.facebook.com/profile.php?id=100058825736530" target="_blank" ><img class="soc-img" src="./image/soc-icons/facebook_icon.svg" alt="facebook-icon"></a></li> -->
+						<li class="soc-icon">
+							<a href="https://instagram.com/psychiatrist_dnipro?igshid=1qcctmzyaouax" target="_blank">
+								<img class="soc-img" src="./image/soc-icons/Instagram_logo_2016.svg" alt="instagram-icon" />
+							</a>
+						</li>
+						<li class="soc-icon">
+							<a href="tg://resolve?domain=psychiatrist_dnipro">
+								<img class="soc-img" src="./image/soc-icons/telegram_logo.svg" alt="telegram-icon" />
+							</a>
+						</li>
+						<!-- <li class="soc-icon">
+                            <a href="viber://chat?number=+380505006621">
+                                <img class="soc-img" src="./image/soc-icons/viber-icon.svg" alt="viber-icon" />
+                            </a>
+					    </li> -->
+						<!--   <li class="soc-icon"><a href="https://api.whatsapp.com/send?phone=380"><img class="soc-img" src="./image/soc-icons/whatsapp_logo.svg" alt="whatsapp-icon"></a></li> -->
+					</ul>
+
 					<div class="working-time">
 						<div class="contact-h">Графік роботи:</div>
 						<div>Без вихідних</div>
@@ -88,7 +95,7 @@
 				</div>
 
 				<div class="c-f-two">
-					<h2>Запис</h2>
+					<h3>Запис</h3>
 
 					<form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php">
 						<div class="fcf-form-group">
@@ -114,13 +121,18 @@
 
 						<div class="fcf-form-group">
 							<button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">
-								Відправити
+								Записатися
 							</button>
 						</div>
 					</form>
 				</div>
 			</div>
-			<div class="copyright">TR-Лікар психіатр - 2020</div>
+			<div class="copyright">
+				TR-Лікар психіатр - 2020-
+				<script>
+					document.write(new Date().getFullYear());
+				</script>
+			</div>
 			<div class="chevronup-container">
 				<a class="chevronup" href="#top"><i class="fas fa-chevron-up"></i></a>
 			</div>

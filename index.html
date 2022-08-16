@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ua">
+<html lang="uk">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -114,8 +114,8 @@
 			<div class="header-wrapp">
 				<div class="header">
 					<div class="logo-container">
-						<a href="https://www.psychiatrist-dnipro.com.ua">
-							<img class="logo" src="./image/logo.png" alt="TR-logo" />
+						<a href="https://www.psychiatrist-dnipro.com.ua" rel="noopener noreferrer">
+							<img class="logo" src="./image/logo.png" alt="Логотип, зображення мозку в колі на ньому літери TR" />
 						</a>
 					</div>
 
@@ -136,11 +136,11 @@
 					</div>
 
 					<div class="menu">
-						<a href="#top">Головна</a>
-						<a href="#info-work">Принципи роботи</a>
-						<a href="#test">Скринінг</a>
-						<a href="#consultations">Консультації</a>
-						<a href="#footer">Запис</a>
+						<a class="menu-item" href="#top">Головна</a>
+						<a class="menu-item" href="#info-work">Принципи роботи</a>
+						<a class="menu-item" href="#test">Скринінг</a>
+						<a class="menu-item" href="#consultations">Консультації</a>
+						<a class="menu-item" href="#footer">Запис</a>
 					</div>
 				</div>
 			</div>
@@ -150,9 +150,9 @@
 		<main>
 			<div id="top" class="main-container">
 				<!--Photo + about-->
-				<div class="about">
+				<section class="about">
 					<div class="photo">
-						<img id="photo" src="./image/photo.png" alt="dr-photo" />
+						<img id="photo" src="./image/photo.png" alt="Портрет лікаря Тимофєєва Романа Миколайовича" />
 					</div>
 					<div class="info-me">
 						<h1>Тимофєєв Роман Миколайович</h1>
@@ -160,7 +160,7 @@
 						<div class="info-me-list">
 							<ul>
 								<li class="graduate">
-									<div>Асистент кафедри психіатрії, наркології і медичної психології</div>
+									<div class="graduate-header">Асистент кафедри психіатрії, наркології і медичної психології</div>
 								</li>
 								<li class="psi">Лікар психіатр з 2003 року</li>
 								<li class="stethoscope">Лікар вищої категорії</li>
@@ -168,15 +168,17 @@
 						</div>
 
 						<div class="btn-call">
-							<a href="tel:+380505006621">Зателефонувати</a>
+							<a href="tg://resolve?domain=psychiatrist_dnipro">Записатися</a>
+						</div>
+						<div class="btn-call">
+							<a href="tel:380505006621">Зателефонувати</a>
 						</div>
 					</div>
-				</div>
+				</section>
 
-				<hr />
 				<!--About work-->
-				<div id="info-work" class="info-work">
-					<h2>Принципи за якими я працюю:</h2>
+				<section id="info-work" class="info-work">
+					<h2 class="section-header">Принципи за якими я працюю:</h2>
 					<ul>
 						<li>
 							<i class="far fa-check-square"></i>
@@ -204,144 +206,259 @@
 							</ul>
 						</li>
 					</ul>
-				</div>
+				</section>
 				<hr />
 			</div>
 
+			<!--Test Google form-->
 			<!--Google form link https://docs.google.com/forms/d/e/1FAIpQLSdzRrN8yAlha6yhHjVHT1nCN6tAdM9FpR7SgJ8OApDwJvdM-g/viewform?usp=sf_link -->
-			<div id="test" class="test">
+			<section id="test" class="test">
 				<div class="test-wrapper">
-					<h3>Пройди тест та перевір себе безкоштовно</h3>
+					<h2 class="test-header">Пройди тест та перевір себе безкоштовно</h2>
 					<div id="zatemnenie">
 						<div id="okno">
 							<div class="popup-okno">
 								<div class="btn-test">
-									<a href="./skrining_ua.html" target="_blank">Пройти тест українською</a>
+									<a class="test-link-btn" href="./skrining_ua.html" target="_blank">Пройти тест українською</a>
 								</div>
 								<div class="btn-test">
-									<a href="./skrining.html" target="_blank">Пройти тест на русском</a>
+									<a class="test-link-btn" href="./skrining.html" target="_blank">Пройти тест на русском</a>
 								</div>
 							</div>
 							<div><a href="#test" class="close">Закрыть окно</a></div>
 						</div>
 					</div>
 
-					<!-- <a >Вызвать всплывающее окно</a>-->
-
-					<div class="btn-test"><a href="#zatemnenie">Пройти тест</a></div>
+					<div class="btn-test"><a class="test-link-btn" href="#zatemnenie">Пройти тест</a></div>
 				</div>
-			</div>
+			</section>
 
-			<div class="consultation-wrapper">
+			<!--Service-->
+			<section class="consultation-wrapper">
 				<div id="consultations" class="consultations">
-					<h2>Консультації:</h2>
+					<h2 class="section-header">Консультації:</h2>
 					<ul class="consultations-list">
 						<li class="consultation">
 							Очні консультації з видачею заключення та рецепту
-							<ul class="discount-twenty">
-								<!--  <li>При вторинній (повторній) консультації <span>знижка <span>20%</span></span></li> -->
-							</ul>
+							<p class="time-price">
+								<span class="icon-clock"></span>
+								час до 50 хвилин, базова
+								<span class="icon-dollar">ціна</span>
+								<sup class="sup-asterics">&lowast;</sup>
+							</p>
 						</li>
 						<li class="consultation">
 							Online консультування за допомогою платформ
 							<span class="soc-icon">
-								<a href="https://meet.google.com/">
-									<img class="soc-img" src="./image/soc icons/google-meet-icon.svg" alt="g-meet-icon" />
+								<a href="tg://resolve?domain=psychiatrist_dnipro" rel="noopener noreferrer">
+									<img class="soc-img" src="./image/soc-icons/telegram_logo.svg" alt="Іконка(лого) Telegram" />
 								</a>
 							</span>
 							,
 							<span class="soc-icon">
-								<a href="https://explore.zoom.us/meetings">
-									<img class="soc-img" src="./image/soc icons/zoom-icon.svg" alt="zoom-icon" />
+								<a href="http://meet.google.com/wek-ejhu-sff" target="_blank" rel="noopener noreferrer">
+									<img class="soc-img" src="./image/soc-icons/google-meet-icon.svg" alt="Іконка(лого) Google Meet" />
 								</a>
 							</span>
 							,
-							<span class="soc-icon">
-								<a href="viber://chat?number=+380505006621">
-									<img class="soc-img" src="./image/soc icons/viber-icon.svg" alt="viber-icon" />
+							<!-- <span class="soc-icon">
+								<a href="https://explore.zoom.us/meetings" target="_blank" rel="noopener noreferrer"></a>>
+									<img class="soc-img" src="./image/soc-icons/zoom-icon.svg" alt=" Іконка(лого) zoom" />
 								</a>
 							</span>
-							,
+							, -->
+							<!-- <span class="soc-icon">
+								<a href="viber://chat?number=+380505006621" rel="noopener noreferrer"></a>>
+									<img class="soc-img" src="./image/soc-icons/viber-icon.svg" alt="Іконка(лого) viber" />
+								</a>
+							</span> 
+							,-->
 							<span><a class="phone icon-phone" href="tel:+380505006621"></a></span>
 							<!--з доставкою заключення та рецепту по м. Дніпро-->
+							<p class="time-price">
+								<span class="icon-clock"></span>
+								час до 50 хвилин
+								<span class="icon-hryvnya"></span>
+							</p>
 						</li>
 						<li class="consultation">
 							Анонімне консультування
-							<span class="soc-icon">
-								<a href="https://meet.google.com/">
-									<img class="soc-img" src="./image/soc icons/google-meet-icon.svg" alt="g-meet-icon" />
+							<ul class="social-list">
+								<li class="soc-icon">
+									<a href="tg://resolve?domain=psychiatrist_dnipro" rel="noopener noreferrer">
+										<img class="soc-img" src="./image/soc-icons/telegram_logo.svg" alt="Іконка(лого) Google Meet" />
+									</a>
+									<span>,</span>
+								</li>
+								<li class="soc-icon">
+									<a href="http://meet.google.com/wek-ejhu-sff" target="_blank" rel="noopener noreferrer">
+										<img class="soc-img" src="./image/soc-icons/google-meet-icon.svg" alt="Іконка(лого) Google Meet" />
+									</a>
+									<span>,</span>
+								</li>
+								<!-- <li class="soc-icon">
+								<a href="https://explore.zoom.us/meetings" target="_blank" rel="noopener noreferrer"></a>>
+									<img class="soc-img" src="./image/soc-icons/zoom-icon.svg" alt="Іконка(лого) zoom" />
 								</a>
-							</span>
-							,
-							<span class="soc-icon">
-								<a href="https://explore.zoom.us/meetings">
-									<img class="soc-img" src="./image/soc icons/zoom-icon.svg" alt="zoom-icon" />
-								</a>
-							</span>
-							,
-							<span class="soc-icon">
-								<a href="viber://chat?number=+380505006621">
-									<img class="soc-img" src="./image/soc icons/viber-icon.svg" alt="viber-icon" />
-								</a>
-							</span>
-							,
-							<span><a class="phone icon-phone" href="tel:+380505006621"></a></span>
-							,
-							<span class="mail"><a class="icon-e-mail" href="mailto:psychiatrist.dnipro@gmail.com"></a></span>
+								<span>,</span>
+                                </li>
+                                 -->
+								<!-- <li class="soc-icon">
+                                    <a href="viber://chat?number=+380505006621" rel="noopener noreferrer"></a>>
+                                        <img class="soc-img" src="./image/soc-icons/viber-icon.svg" alt="Іконка(лого) viber" />
+                                    </a>
+									<span>,</span>
+                                </li> 
+                                -->
+								<li class="soc-icon">
+									<a class="phone icon-phone" href="tel:+380505006621"></a>
+									<!-- <span>,</span> -->
+								</li>
+								<!-- 
+							    <li class="mail"><a class="icon-e-mail" href="mailto:psychiatrist.dnipro@gmail.com"></a></li> -->
+								<li class="time-price">
+									<span class="icon-clock"></span>
+									час до 50 хвилин, базова ціна
+									<sup class="sup-asterics">&lowast;</sup>
+								</li>
+							</ul>
 						</li>
 						<li class="consultation">
-							<span class="upper">support care:</span>
-							<span class="bonus">
+							Повторні очні консультації з корекцією лікування та видачею рецепта, ціна 15&dollar;
+							<p class="time-price">
+								<span class="icon-clock"></span>
+								час до 25 хвилин, ціна 0.8 від базової ціни
+							</p>
+						</li>
+						<li class="consultation">
+							Повторні online консультації, ціна 15&dollar;
+							<ul class="social-list">
+								<li class="soc-icon">
+									<a href="tg://resolve?domain=psychiatrist_dnipro" rel="noopener noreferrer">
+										<img class="soc-img" src="./image/soc-icons/telegram_logo.svg" alt="Іконка(лого) Google Meet" />
+									</a>
+									<span>,</span>
+								</li>
+
+								<li class="soc-icon">
+									<a href="http://meet.google.com/wek-ejhu-sff" target="_blank" rel="noopener noreferrer">
+										<img class="soc-img" src="./image/soc-icons/google-meet-icon.svg" alt="Іконка(лого) Google Meet" />
+									</a>
+									<span>,</span>
+								</li>
+
+								<!-- <li class="soc-icon">
+								<a href="https://explore.zoom.us/meetings" target="_blank" rel="noopener noreferrer"></a>>
+									<img class="soc-img" src="./image/soc-icons/zoom-icon.svg" alt="Іконка(лого) zoom" />
+								</a>
+								<span>,</span>
+
+                                </li>
+                                 -->
+								<!-- <li class="soc-icon">
+                                    <a href="viber://chat?number=+380505006621" rel="noopener noreferrer"></a>>
+                                        <img class="soc-img" src="./image/soc-icons/viber-icon.svg" alt="Іконка(лого) viber" />
+                                    </a>
+								<span>,</span>
+
+                                </li> 
+                               -->
+								<li class="soc-icon">
+									<a class="phone icon-phone" href="tel:+380505006621"></a>
+									<!-- <span>,</span> -->
+								</li>
+								<!-- 
+							    <li class="mail"><a class="icon-e-mail" href="mailto:psychiatrist.dnipro@gmail.com"></a></li> -->
+								<li class="time-price">
+									<span class="icon-clock"></span>
+									час до 25 хвилин, ціна 0.8 від базової ціни
+								</li>
+							</ul>
+						</li>
+						<li class="consultation">
+							<span class="upper">Support care:</span>
+							Інформаційна підтримка під час лікування
+							<a class="soc-icon" href="tg://resolve?domain=psychiatrist_dnipro" rel="noopener noreferrer">
+								<img class="soc-img" src="./image/soc-icons/telegram_logo.svg" alt="Іконка(лого) Google Meet" />
+							</a>
+							<div class="time-price">
+								<div>
+									Час: впродовж робочого дня
+									<span class="icon-day"></span>
+								</div>
+								<div>Ціна: 0.5 базової ціни доба.</div>
+							</div>
+							<!-- <span class="bonus">
 								Бонусна програма
 								<img src="image/gift.png" width="35" />
 							</span>
 							<div class="discount-container">
-								<!--  <div class="discount"><span>50%</span> економія</div>
-                        <div class="discount-info"> -->
+								 <div class="discount"><span>50%</span> економія</div>
+                        <div class="discount-info"> 
 								<ul>
 									<li class="plus">
 										Первинна очна чи online консультація з видачею рецепту та заключення
-										<!--з можливою доставкою по м. Дніпро-->
+										з можливою доставкою по м. Дніпро
 									</li>
 									<li class="plus">6 повторних контрольних консультацій протягом року</li>
 								</ul>
-								<!--  </div> -->
+								 </div> 
 							</div>
+						</li> -->
+							<!-- <li class="consultation">Курси основ психіатрії для психологів</li> -->
 						</li>
-						<li class="consultation">Курси основ психіатрії для психологів</li>
+
+						<!-- <li>Військовим і мед.працівникам знижка 50&percnt;</li> -->
 					</ul>
+
+					<div class="discount-ukraine">
+						<img
+							src="./image/discount-50-ukraine-1.jpg"
+							alt="Банер зі знижкою 50% для військових та мед. працівників"
+							width="1000"
+						/>
+					</div>
 				</div>
-			</div>
+			</section>
 		</main>
 
 		<!--Footer Contact information social accounts-->
 		<footer id="footer">
 			<div class="container-footer">
 				<div class="c-f-one">
-					<div class="contact-h">Контакти:</div>
-					<div class="phone">
-						<a href="tel:+380505006621">+38 (050) 500-66-21</a>
-					</div>
-					<div class="mail">
-						<a href="mailto:psychiatrist.dnipro@gmail.com">psychiatrist.dnipro@gmail.com</a>
-					</div>
-					<!--    <span class="soc-icon"><a href="https://www.facebook.com/profile.php?id=100058825736530" target="_blank" ><img class="soc-img" src="./image/soc icons/facebook_icon.svg" alt="facebook-icon"></a></span> -->
-					<span class="soc-icon">
-						<a href="https://instagram.com/psychiatrist_dnipro?igshid=1qcctmzyaouax" target="_blank">
-							<img class="soc-img" src="./image/soc icons/Instagram_logo_2016.svg" alt="instagram-icon" />
-						</a>
-					</span>
-					<span class="soc-icon">
-						<a href="tg://resolve?domain=psychiatrist_dnipro">
-							<img class="soc-img" src="./image/soc icons/telegram_logo.svg" alt="telegram-icon" />
-						</a>
-					</span>
-					<span class="soc-icon">
-						<a href="viber://chat?number=+380505006621">
-							<img class="soc-img" src="./image/soc icons/viber-icon.svg" alt="viber-icon" />
-						</a>
-					</span>
-					<!--   <span class="soc-icon"><a href="https://api.whatsapp.com/send?phone=380"><img class="soc-img" src="./image/soc icons/whatsapp_logo.svg" alt="whatsapp-icon"></a></span> -->
+					<h2 class="contact-h">Контакти:</h2>
+					<ul class="contact-list">
+						<li class="phone">
+							<a class="phone-link" href="tel:+380505006621">+38 (050) 500-66-21</a>
+						</li>
+						<li class="mail">
+							<a href="mailto:psychiatrist.dnipro@gmail.com">psychiatrist.dnipro@gmail.com</a>
+						</li>
+					</ul>
+
+					<ul class="social-list">
+						<!--    <li class="soc-icon"><a href="https://www.facebook.com/profile.php?id=100058825736530" target="_blank" rel="noopener noreferrer" ><img class="soc-img" src="./image/soc-icons/facebook_icon.svg" alt="facebook-icon"></a></li> -->
+						<li class="soc-icon">
+							<a
+								href="https://instagram.com/psychiatrist_dnipro?igshid=1qcctmzyaouax"
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								<img class="soc-img" src="./image/soc-icons/Instagram_logo_2016.svg" alt="instagram-icon" />
+							</a>
+						</li>
+						<li class="soc-icon">
+							<a href="tg://resolve?domain=psychiatrist_dnipro">
+								<img class="soc-img" src="./image/soc-icons/telegram_logo.svg" alt="telegram-icon" />
+							</a>
+						</li>
+						<!-- <li class="soc-icon">
+                            <a href="viber://chat?number=+380505006621">
+                                <img class="soc-img" src="./image/soc-icons/viber-icon.svg" alt="viber-icon" />
+                            </a>
+					    </li> -->
+						<!--   <li class="soc-icon"><a href="https://api.whatsapp.com/send?phone=380"><img class="soc-img" src="./image/soc-icons/whatsapp_logo.svg" alt="whatsapp-icon"></a></li> -->
+					</ul>
 
 					<div class="working-time">
 						<div class="contact-h">Графік роботи:</div>
@@ -360,12 +477,12 @@
 							</div>
 						</div>
 
-						<div class="fcf-form-group">
+						<!-- <div class="fcf-form-group">
 							<label for="Email" class="fcf-label">Ваш email</label>
 							<div class="fcf-input-group">
 								<input type="email" id="Email" name="Email" class="fcf-form-control" required />
 							</div>
-						</div>
+						</div> -->
 
 						<div class="fcf-form-group">
 							<label for="Phone" class="fcf-label">Ваш телефон</label>
@@ -376,15 +493,17 @@
 
 						<div class="fcf-form-group">
 							<button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">
-								Відправити
+								Передзвоніть мені
 							</button>
 						</div>
 					</form>
 				</div>
 			</div>
 			<div class="copyright">
-				TR-Лікар психіатр - 2020
-				<!--<script>new Date().getFullYear()>2010&&document.write("-"+new Date().getFullYear());</script> -->
+				TR-Лікар психіатр - 2020-
+				<script>
+					document.write(new Date().getFullYear());
+				</script>
 			</div>
 			<div class="chevronup-container">
 				<a class="chevronup" href="#top"><i class="fas fa-chevron-up"></i></a>

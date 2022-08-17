@@ -5,7 +5,7 @@
 }
 
 body {
-    color: #000;
+    color: #000000;
     font-family: Arial, Helvetica, sans-serif;
     background-color: #e7ebe8;
     /* background-color: #93d8c3c9; */
@@ -14,15 +14,16 @@ body {
 :root {
     --purple: rgb(55, 37, 99);
     --litepurple: rgb(127, 85, 131);
-    --orange: #007c57; /*  255,160,112  rgba(248, 184, 8); */
-    --orangetrans: #07b27f; /* 255,203,177    rgba(248, 184, 88, 0.589); */
+    --green: #007c57; /*  255,160,112  rgba(248, 184, 8); */
+    --greentrans: #07b27f; /* 255,203,177    rgba(248, 184, 88, 0.589); */
+    --greenopasity: rgba(0, 124, 87, 0.8);
     font-size: 25px;
 }
 
 .header-wrapp {
     width: 100%;
     height: 100px;
-    background: rgba(0,124,87, 0.8);
+    background: var(--greenopasity);
     position: fixed;
     padding: 0 100px 0 100px;
     top: 0; 
@@ -76,7 +77,7 @@ body {
 .about {
     display: flex;
     padding-bottom: 50px;
-    border-bottom: solid 1px rgb(55, 37, 99);
+    border-bottom: solid 1px var(--purple);
 }
 
 .photo {
@@ -117,7 +118,7 @@ h1 {
     font-size: 1.5rem;
     padding-right: 20px;  
     padding-left: 20px;      
-    color: var(--orange);
+    color: var(--green);
 }
 
 .graduate::before {
@@ -127,7 +128,7 @@ h1 {
     font-size: 1.3rem;
     padding-right: 20px;    
     padding-left: 20px;    
-    color: var(--orange);
+    color: var(--green);
     position: relative;
     top: -20px;
 }
@@ -144,7 +145,7 @@ h1 {
     font-size: 1.3rem;
     padding-right: 20px; 
     padding-left: 20px;       
-    color: var(--orange);
+    color: var(--green);
 }
 
 .btn-call {
@@ -187,7 +188,7 @@ h1 {
 
 .fa-check-square{
     font-size: 2rem;
-    color: var(--orange);
+    color: var(--green);
     padding-right: 20px;
     position: relative;
     top: 10px;
@@ -211,7 +212,7 @@ h1 {
     content: '\f080';
     padding-right: 20px;    
     font-size: 1.5rem;
-    color: var(--orange);
+    color: var(--green);
 }
 
 
@@ -221,7 +222,7 @@ h1 {
     content: '\f7e6';
     padding-right: 20px;    
     font-size: 1.5rem;
-    color: var(--orange);
+    color: var(--green);
 }
 
 .section-header {
@@ -248,7 +249,7 @@ h1 {
 
 .btn-test {
     padding: 20px;
-    background-color: var(--orange);
+    background-color: var(--green);
     width: 300px;
     margin: 0 auto;
     border-radius: 10px;
@@ -256,7 +257,7 @@ h1 {
 }
 
 .btn-test:hover, .btn-test:focus {
-    background-color: var(--orangetrans);
+    background-color: var(--greentrans);
 }
 
 .btn-test .test-link-btn {
@@ -292,7 +293,7 @@ h1 {
     content: '\f46c';
     padding-right: 20px;    
     font-size: 1.5rem;
-    color: var(--orange);
+    color: var(--green);
 }
 
 .discount-twenty {
@@ -302,7 +303,7 @@ h1 {
 
 .discount-twenty span {
     font-size: 1rem;
-    color: var(--orange);
+    color: var(--green);
 }
 
 .discount-twenty span span {
@@ -352,7 +353,7 @@ h1 {
         display: inline-block;
         content: '\24';
         font-size: 1.6rem;
-        color: var(--orange);
+        color: var(--green);
         padding-left: 5px;
 }
 
@@ -365,7 +366,7 @@ h1 {
     display: inline-block;
     content: '\f6f2';
     font-size: 1.3rem;
-    color: var(--orange);
+    color: var(--green);
 }
 
 .icon-day::before {
@@ -396,7 +397,7 @@ h1 {
 
 .discount span {
     font-size: 4rem;
-    color: var(--orange);
+    color: var(--green);
 }
 
 .plus {
@@ -409,7 +410,7 @@ h1 {
     content: '\f271';
     padding-right: 20px;
     font-size: 1.3rem;
-    color: var(--orange);
+    color: var(--green);
 }
 
 .discount-info {
@@ -445,7 +446,7 @@ footer {
 
 .container-footer {
     display: flex;
-    background: var(--orangetrans);
+    background: var(--greentrans);
     padding: 50px 100px 0 100px;
 }
 
@@ -512,7 +513,7 @@ footer {
     font-size: 10px;
     text-align: center;
     padding: 20px 0;
-    background: var(--orange);
+    background: var(--green);
 }
 
 .chevronup-container {
@@ -786,7 +787,7 @@ input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[typ
     margin: 0;
     box-sizing: border-box;
     width: 200px;
-    background-color: rgba(250, 177, 141);
+    background-color: var(--greenopasity);
     height: 100%;
     top: 0;
     right: -200px;

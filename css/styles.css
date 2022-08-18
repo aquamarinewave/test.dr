@@ -150,6 +150,7 @@ h1 {
 .btn-container {
     padding: 0;
     width: 100%;
+    height: 100px;
 }
   
 
@@ -872,6 +873,10 @@ input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[typ
         padding-right: 50px;
     }
 
+    .btn-call-link {
+        width: 50%;
+    }
+
 }
 
 /* iPad */
@@ -925,8 +930,13 @@ input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[typ
     }
 
     .btn-call {
-        margin: 5% 10% 0 0;
+        justify-content: center;
+        margin: 3% 3% 0 0;
         text-align: center;
+    }
+
+    .btn-call-link {
+        width: 50%;
     }
 
     .test-wrapper {
@@ -1021,8 +1031,13 @@ input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[typ
     }
 
     .btn-call {
-        margin: 5% 10% 0 0;
+        justify-content: center;
+        margin: 3% 3% 0 0;
         text-align: center;
+    }
+
+    .btn-call-link {
+        width: 50%;
     }
 
     .test-wrapper {
@@ -1108,9 +1123,14 @@ input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[typ
     }
 
     .btn-call {
-        margin: 5% 10% 0 0;
+        justify-content: center;
+        margin: 3% 3% 0 0;
         text-align: center;
     }    
+
+    .btn-call-link {
+        width: 50%;
+    }
 
     .test-wrapper {
         padding: 100px 20px 0 20px;

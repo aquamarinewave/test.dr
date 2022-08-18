@@ -13,8 +13,8 @@ body {
 :root {
     --purple: rgb(55, 37, 99);
     --litepurple: rgb(127, 85, 131);
-    --green: #007c57; /*  255,160,112  rgba(248, 184, 8); */
-    --greentrans: #07b27f; /* 255,203,177    rgba(248, 184, 88, 0.589); */
+    --green: #007c57;  /* 255,160,112 rgba(248, 184, 8); */
+    --greentrans: #07b27f;  /* 255,203,177 rgba(248, 184, 88, 0.589); */
     --greenopasity: rgba(0, 124, 87, 0.8);
     font-size: 25px;
 }

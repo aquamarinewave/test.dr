@@ -346,16 +346,9 @@ h1 {
     content: '\f017';
     font-size: 1.3rem;
     color: var(--purple);
+    padding-right: 10px;
 }
 
-.icon-dollar::after {
-    font-family: "Font Awesome 5 Free";
-        display: inline-block;
-        content: '\24';
-        font-size: 1.6rem;
-        color: var(--green);
-        padding-left: 5px;
-}
 
 .sup-asterics {
     font-size: 1.1rem;
@@ -367,6 +360,7 @@ h1 {
     content: '\f6f2';
     font-size: 1.3rem;
     color: var(--green);
+    padding-right: 10px;
 }
 
 .icon-day::before {

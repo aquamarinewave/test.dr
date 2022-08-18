@@ -8,7 +8,6 @@ body {
     color: #000000;
     font-family: Arial, Helvetica, sans-serif;
     background-color: #e7ebe8;
-    /* background-color: #93d8c3c9; */
 }
 
 :root {
@@ -148,12 +147,26 @@ h1 {
     color: var(--green);
 }
 
+.btn-container {
+    padding: 0;
+    width: 100%;
+}
+  
+
 .btn-call {
-    margin: 3% 10% 0 0;
-    text-align: right;
+    display: flex;
+    justify-content: right;
+    margin: 3% 3% 0 0;
+    /* width:50px; */
 }
 
-.btn-call a {
+.btn-call-link {
+    display: inline-block;
+    text-align: center;
+    width: 25%;
+}
+
+.btn-call .btn-call-link {
     font-size: 0.7rem;
     border-radius: 10px;
     text-decoration: none;
@@ -346,9 +359,12 @@ h1 {
     content: '\f017';
     font-size: 1.3rem;
     color: var(--purple);
-    padding-right: 10px;
+    padding-right: 20px;
 }
 
+.sup-asterics-container {
+    font-style: italic;
+}
 
 .sup-asterics {
     font-size: 1.1rem;
@@ -359,8 +375,8 @@ h1 {
     display: inline-block;
     content: '\f6f2';
     font-size: 1.3rem;
-    color: var(--green);
-    padding-right: 10px;
+    color: var(--purple);
+    padding-right: 20px;
 }
 
 .icon-day::before {
@@ -495,11 +511,14 @@ footer {
 .social-list, .soc-icon {
     display: inline;
     list-style-type: none;
+    width:30px;
+    margin: 0 5px;
 }
 
-.soc-img {
-    width: 30px;
+.soc-icon a {
+    text-decoration: none;
 }
+
 
 .copyright {
     color: #fff;

@@ -161,6 +161,10 @@ h1 {
     /* width:50px; */
 }
 
+.pop-up {
+    padding: 8% 18%;
+}
+
 .btn-call-link {
     display: inline-block;
     text-align: center;
@@ -278,6 +282,11 @@ h1 {
     text-decoration: none;
     color: #ffffff;
     font-weight: bold;
+}
+
+.test-ua, .test-ru {
+    font-size: 0.9rem;
+    padding: 3% 24%;
 }
 
 .consultation-wrapper {
@@ -877,6 +886,11 @@ input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[typ
         width: 50%;
     }
 
+    .test-ua,
+    .test-ru {
+        font-size: 0.8rem;
+        padding: 3% 10%;
+    }
 }
 
 /* iPad */
@@ -960,7 +974,11 @@ input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[typ
         padding-left: 0;
         padding-right: 0;
     }
-
+        .test-ua,
+        .test-ru {
+            font-size: 0.9rem;
+            padding: 3% 10%;
+        }
 }
 
 
@@ -1066,6 +1084,12 @@ input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[typ
        height: 330px;
     }
 
+    .test-ua,
+    .test-ru {
+        font-size: 0.8rem;
+        padding: 3% 10%;
+    }
+
 }
 
 @media screen and (min-width: 320px) and (max-width: 375px) {
@@ -1157,5 +1181,117 @@ input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[typ
     #photo  { 
        height: 330px;
  }
+    .test-ua,
+    .test-ru {
+        font-size: 0.8rem;
+        padding: 3% 10%;
+    }
+}
+
+@media screen and (min-width: 280px) and (max-width: 319px) {
+
+:root {
+        font-size: 15px;
+    }
+
+    .btn-menu {
+        display: block;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .main-container {
+        padding: 150px 0 0 4px;
+    }
+
+    .header-wrapp {
+        padding: 0 20px 0 20px;
+    }
+
+    .consultation-wrapper {
+        padding: 0 20px 0 20px;
+    }
+
+    .discount {
+        font-size: 0.8rem;
+    }
+
+    .discount span {
+        font-size: 2rem;
+    }
+
+    .in-bl {
+        display: block;
+    }
+
+    .about {
+        display: block;
+    }
+
+    .photo {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 10px;
+        width: 100%;
+    }
+
+    .info-me {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .btn-call {
+        justify-content: center;
+        margin: 3% 3% 0 0;
+        text-align: center;
+    }
+
+    .btn-call-link {
+        width: 50%;
+    }
+
+    .test-wrapper {
+        padding: 100px 20px 0 20px;
+    }
+
+    .container-footer {
+        display: block;
+        padding: 50px 20px 0 20px;
+    }
+
+    .c-f-one,
+    .c-f-two {
+        width: 100%;
+    }
+
+    .c-f-one {
+        margin-bottom: 20px;
+    }
+
+    .skriner {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    #photo {
+        height: 300px;
+    }
+
+    .test-ua,
+    .test-ru {
+        font-size: 0.8rem;
+        padding: 3% 10%;
+    }
+    
+    .btn-test {
+        width: 200px;
+    }
+
+    #okno {
+        width: 100% !important;
+    }
+
 
 }

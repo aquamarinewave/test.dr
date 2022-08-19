@@ -1,10 +1,9 @@
 <?php
-if (isset($_POST['Email'])) {
+if (isset($_POST['Phone'])) {
 
     // EDIT THE 2 LINES BELOW AS REQUIRED
     $email_to = "psychiatrist.dnipro@gmail.com";
-    $email_subject = "Новий запит на прийом";
-
+    $email_subject = "Новий запит на дзвінок";
     function problem($error)
     {
         echo "Вибачте виникла помилка. ";
@@ -17,22 +16,22 @@ if (isset($_POST['Email'])) {
     // validation expected data exists
     if (
         !isset($_POST['Name']) ||
-        !isset($_POST['Email']) ||
+        // !isset($_POST['Email']) ||
         !isset($_POST['Phone'])
     ) {
         problem('Вибачте виникла помилка.');
     }
-
+ 
     $name = $_POST['Name']; // required
-    $email = $_POST['Email']; // required
+    // $email = $_POST['Email']; // required
     $phone = $_POST['Phone']; // required
 
     $error_message = "";
-    $email_exp = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';
+    // $email_exp = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';
 
-    if (!preg_match($email_exp, $email)) {
-        $error_message .= 'Вкажіть вірно Ваш Email.<br>';
-    }
+    // if (!preg_match($email_exp, $email)) {
+    //     $error_message .= 'Вкажіть вірно Ваш Email.<br>';
+    // }
 
     $string_exp = "/^[а-яёa-z]+$/iu";
 
@@ -56,23 +55,23 @@ if (isset($_POST['Email'])) {
     }
 
     $email_message .= "І'мя: " . clean_string($name) . "\n";
-    $email_message .= "Email: " . clean_string($email) . "\n";
+    // $email_message .= "Email: " . clean_string($email) . "\n";
     $email_message .= "Телефон: " . clean_string($phone) . "\n";
 
     // create email headers
     $headers = 'From: ' . $email . "\r\n" .
-        'Reply-To: ' . $email . "\r\n" .
+        // 'Reply-To: ' . $email . "\r\n" .
         'X-Mailer: PHP/' . phpversion();
     @mail($email_to, $email_subject, $email_message, $headers);
 ?>
 
 <!DOCTYPE html>
-<html lang="ua">
+<html lang="uk">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TR-лікар психіатр</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./fonts/fontawesome-free-5.15.1-web/css/all.min.css">
     <link rel="shortcut icon" href="/image/logo.png" type="image/png">
 
@@ -92,7 +91,7 @@ if (isset($_POST['Email'])) {
         <div class="header-wrapp">
             <div class="header"> 
                 <div class="logo-container">
-                    <a href="https://www.psychiatrist-dnipro.com.ua"><img class="logo" src="./image/logo.png" alt="TR-logo"></a>
+                    <a href="https://www.psychiatrist-dnipro.com.ua" rel="noopener noreferrer"><img class="logo" src="./image/logo.png" alt="TR-logo"></a>
                 </div>
 
                 <div class="mob-menu">
@@ -108,7 +107,7 @@ if (isset($_POST['Email'])) {
                 </div>
 
                 <div class="menu">
-                    <a href="./index.html">Головна</a>
+                    <a class="menu-item" href="./index.html">Головна</a>
                 </div>
 
             </div>
@@ -117,10 +116,10 @@ if (isset($_POST['Email'])) {
     <!-- include your success message below -->
 
     <div class="thanks-container">
-        <div class="thanks-message" style="padding: 250px 100px 0 100px; text-align: center; font-weight: bold;">Дякуємо. Ми отримали Ваш запит на прийом. Найближчим часом зв'яжемось з Вами для  визначення дати і часу візиту </div>
+        <div class="thanks-message">Дякуємо. Ми отримали Ваш запит на прийом. Найближчим часом зв'яжемось з Вами для  визначення дати і часу візиту </div>
     </div>
 
-    <div><a style="test-decoration:none; font-size: 20px; font-weight: bold; color: #fff; backgroung: rgb(55, 37, 99); padding: 10px 10px;" href="./index.html">Повернутись на головну</a></div>
+    <div style="display:flex; justify-content:center;"><a class="form-btn-back" href="./index.html">Повернутись на головну</a></div>
 
 <?php
 }

@@ -2,7 +2,8 @@
 if (isset($_POST['Phone'])) {
 
     // EDIT THE 2 LINES BELOW AS REQUIRED
-    $email_to = "psychiatrist.dnipro@gmail.com";
+    // $email_to = "psychiatrist.dnipro@gmail.com";
+    $email_to = "medynska.maryna@gmail.com"
     $email_subject = "Новий запит на дзвінок";
     function problem($error)
     {
